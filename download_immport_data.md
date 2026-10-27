@@ -4,8 +4,8 @@
 2. Login to ImmPort
 3. Navigate to SDY1538 (GAM) and SDY2584 (PNG) under Shared Data
 4. Install IBM Aspera Connect
-5. Download the analysis data files needed
-6. Save data files to /Downloads folder on local computer to read in for analysis
+5. Download the analysis data files needed (listed below)
+6. Save data files to single folder on local computer and add to /data folder for analysis
 
 ## Register for ImmPort account, if necessary
 In order to download shared data from ImmPort, you will first need to register for an account. To do so, navigate to https://www.immport.org/auth/login 
@@ -39,7 +39,7 @@ The IBM Aspera Connect browser extension and desktop software must be installed 
 ## Download the analysis data files
 You will need to download the following list of data files from ImmPort. Navigate to the 'Study Files' tab under the corresponding SDY, select the files listed, and select the Download button.
 
-SDY1538 (GAM) files:
+SDY1538 (GAM) files needed:
 - GAMMAIN_SINGLEOMICS_ADA.csv
 - GAMMAIN_SINGLEOMICS_BCELLFREQS.csv
 - GAMMAIN_SINGLEOMICS_CLINICAL.csv
@@ -54,7 +54,7 @@ SDY1538 (GAM) files:
 - GAM_RandomizationGroupDefinition.csv
 - exclusion_list.csv
 
-SDY2584 (PNG) files:
+SDY2584 (PNG) files needed:
 - PNGVAL_SINGLEOMICS_BCELLS_FREQS.txt
 - PNGVAL_SINGLEOMICS_MYELOID_FREQS.txt
 - PNGVAL_SINGLEOMICS_CLINICAL.csv
@@ -67,7 +67,7 @@ SDY2584 (PNG) files:
 
 <img width="1118" alt="Image" src="https://github.com/user-attachments/assets/34a938c7-1804-4ab5-b3e3-14d446d37e9d" />
 
-## Save files to /Downloads folder on local computer to read in for analysis
-Aspera Connect will download the files to your local /Downloads folder. You will need to manually update all file directories within the analysis code to these local directories. 
+## Save files to single folder on local computer and add to data folder for analysis
+Aspera Connect will download the files to your local /Downloads folder. You will then need to place all SDY1538 (GAM) files under /data/raw/GAM/ and all SDY2584 (PNG) files under /data/raw/PNG for analyses.
 
 <img width="491" alt="Image" src="https://github.com/user-attachments/assets/c836047b-b6b6-491d-90c9-14b7da83d379" />
